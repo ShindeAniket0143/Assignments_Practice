@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+void Display(char ch)
+{
+    if (ch >= 'A' && ch <= 'Z')
+    {
+        printf("%c", ch + ('a' - 'A'));
+    }
+    else if (ch >= 'a' && ch <= 'z')
+    {
+        printf("%c", ch - ('a' - 'A'));
+    }
+    else
+    {
+        printf("%c", ch);
+    }
+}
+
+int main()
+{
+    char cValue = '\0';
+
+    printf("Enter the Character : ");
+    scanf(" %c", &cValue);
+
+    Display(cValue);
+
+    return 0;
+}
